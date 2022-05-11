@@ -11,11 +11,11 @@ SLAM의 문제를 확률상의 그래프 모델로 표현 할 수 있다는 것�
     * Front End : 매칭 되는 센서 데이터로 pose graph 생성(backend에서 풀 linear system을 만듬)
     * Back End : LSM을 사용하여 pose 최적화 
 * 1D 예제
-    * frontend
+    * frontend(Graph construction)
         * Initial position: -3
         * 1st movement: 5
         * 2nd movement: 3
-    * backend
+    * backend(Graph Optimization)
         * initial position을 linear system에 mapping 하면,
         $$\begin{bmatrix}1&& \\ && \\ && \end{bmatrix} \begin{bmatrix}x_0 \\ x_1 \\ x_2\end{bmatrix} = \begin{bmatrix}-3\\ \\\\\end{bmatrix}$$
         <center>&nbsp; &nbsp; &nbsp; &nbsp; [Information matrix][pose]=[Information vector]</center>
